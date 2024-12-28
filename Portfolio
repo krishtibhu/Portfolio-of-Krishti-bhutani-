@@ -62,6 +62,114 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+    color: #ededed;
+    background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+}
+
+.timeline .timeline-row {
+    display: flex;
+    column-gap: 64px;
+    flex-wrap: wrap;
+}
+
+.timeline-row .timeline-column {
+    flex: 1 1 320px;
+}
+
+.timeline-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box {
+    position: relative;
+    border-left: 2px solid #0ef;
+}
+
+.timeline-box .timeline-content {
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    background: #0ef;
+    border-radius: 50%;
+}
+
+.timeline-content .content {
+    padding: 24px;
+    border: 2px solid #0ef;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.timeline-content .content .year {
+    font-size: 16px;
+    color: #0ef;
+}
+
+.timeline-content .content .year i {
+    margin-right: 8px;
+}
+
+.timeline-content .content h3 {
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.timeline-content .content p {
+    font-size: 16px;
+}
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 105%;
+    height: 100%;
+    background: #1f242d;
+    animation: show-right 1s ease forwards;
+    animation-delay: calc(.5s * var(--i));
+}
+
+@keyframes show-right {
+    100% {
+        width: 0;
+    }
+}
+  width: 100px;
+}
+      * {
+        box-sizing: border-box;
+      }
+
 </style>
 </head>
 <body>
@@ -76,10 +184,50 @@ footer {
             </ul>
         </nav>
     </header>
+   <section class="timeline">
+        <div class="timeline-row">
+            <div class="timeline-column">
+                <h2 class="title">Education<span class="animate" style="--i:1;"></span></h2>
+
+                <div class="timeline-box">
+                    <div class="timeline-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2021 - 2022</div>
+                 <h3>High School Degree</h3>
+           <p>I have done my schooling from mcl saraswati bal mandir in my 10th standard i have scored 60 percent and 12th standard i have scored 75 percent .</p>
+                  </div>
+                    </div>
+
+                    <div class="timeline-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2022 - 2023</div>
+                            <h3>Bachelor Degree</h3>
+         <p>I am pursuing my graduation form delhi university in 2 year in bachelor of arts .</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <span class="animate" style="--i:2;"></span>
+                </div>
+            </div>
+
+            
+            
+                    
+            
+                   
+
+                    <span class="animate" style="--i:5;"></span>
+                </div>
+            </div>
+        </div>
+        <header>
+    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a passionate web developer...</p>
+        <p>Hi, I'm [Krishti], a passionate web developer...</p>
     </section>
 
     <section id="skills">
